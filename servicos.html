@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>ServiçoSocial - Todos os Serviços</title>
+    <link rel="stylesheet" href="servicos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <i class="fa-solid fa-building-columns"></i>
+            <h1>ServiçoSocial</h1>
+        </div>
+        <a href="#" class="back-link">Voltar para Início</a>
+    </header>
+
+    <div class="services-header">
+        <div class="services-icon">
+            <i class="fa-solid fa-list-ul"></i>
+        </div>
+        <div class="services-title">
+            <h2>Todos os Serviços</h2>
+            <p>Lista completa de serviços disponíveis</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="search-container">
+            <input type="text" placeholder="Buscar serviços..." class="search-input">
+            <i class="fa-solid fa-search search-icon"></i>
+        </div>
+
+        <div class="services-list">
+            <div class="service-card">
+                <div class="service-header" onclick="toggleService(this)">
+                    <div class="service-icon health">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="service-info">
+                        <span class="service-category">SAÚDE</span>
+                        <h3 class="service-name">Vacinação Infantil</h3>
+                    </div>
+                    <div class="expand-icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <p class="service-description">Programa de vacinação infantil gratuito para crianças de 0 a 6 anos, seguindo o calendário nacional de vacinação.</p>
+                    
+                    <div class="service-details">
+                        <div class="documents">
+                            <h4>Documentos Necessários:</h4>
+                            <ul>
+                                <li>Carteira de vacinação da criança</li>
+                                <li>Documento de identidade da criança (certidão de nascimento)</li>
+                                <li>Documento de identidade do responsável</li>
+                                <li>Cartão do SUS (se tiver)</li>
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <h4>Local e Horário:</h4>
+                            <p>Unidades Básicas de Saúde (UBS) do município</p>
+                            <p>Segunda a sexta-feira, das 8h às 17h</p>
+                            <p>Contato: (11) 3333-4444</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="action-button">Agendar atendimento online</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header" onclick="toggleService(this)">
+                    <div class="service-icon health">
+                        <i class="fa-solid fa-pills"></i>
+                    </div>
+                    <div class="service-info">
+                        <span class="service-category">SAÚDE</span>
+                        <h3 class="service-name">Distribuição de Medicamentos</h3>
+                    </div>
+                    <div class="expand-icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <p class="service-description">Programa de distribuição gratuita de medicamentos essenciais para tratamento de doenças crônicas e agudas.</p>
+                    
+                    <div class="service-details">
+                        <div class="documents">
+                            <h4>Documentos Necessários:</h4>
+                            <ul>
+                                <li>Receita médica original e atualizada</li>
+                                <li>Documento de identidade</li>
+                                <li>Cartão do SUS</li>
+                                <li>Comprovante de residência</li>
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <h4>Local e Horário:</h4>
+                            <p>Farmácias Municipais e UBS</p>
+                            <p>Segunda a sexta-feira, das 8h às 17h</p>
+                            <p>Contato: (11) 3333-5555</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="action-button">Consultar medicamentos disponíveis</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header" onclick="toggleService(this)">
+                    <div class="service-icon health">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <div class="service-info">
+                        <span class="service-category">SAÚDE</span>
+                        <h3 class="service-name">Consultas Médicas</h3>
+                    </div>
+                    <div class="expand-icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <p class="service-description">Agendamento de consultas médicas em diversas especialidades nas unidades de saúde do município.</p>
+                    
+                    <div class="service-details">
+                        <div class="documents">
+                            <h4>Documentos Necessários:</h4>
+                            <ul>
+                                <li>Documento de identidade</li>
+                                <li>Cartão do SUS</li>
+                                <li>Comprovante de residência</li>
+                                <li>Encaminhamento médico (para especialidades)</li>
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <h4>Local e Horário:</h4>
+                            <p>Unidades Básicas de Saúde (UBS) e Ambulatórios</p>
+                            <p>Segunda a sexta-feira, das 7h às 19h</p>
+                            <p>Contato: (11) 3333-6666</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="action-button">Agendar consulta</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header" onclick="toggleService(this)">
+                    <div class="service-icon education">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="service-info">
+                        <span class="service-category">EDUCAÇÃO</span>
+                        <h3 class="service-name">Matrícula Escolar</h3>
+                    </div>
+                    <div class="expand-icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <p class="service-description">Serviço de matrícula para educação infantil, ensino fundamental e médio na rede pública municipal.</p>
+                    
+                    <div class="service-details">
+                        <div class="documents">
+                            <h4>Documentos Necessários:</h4>
+                            <ul>
+                                <li>Certidão de nascimento ou RG do aluno</li>
+                                <li>CPF do aluno (se tiver)</li>
+                                <li>RG e CPF do responsável</li>
+                                <li>Comprovante de residência</li>
+                                <li>Histórico escolar (para transferências)</li>
+                                <li>Carteira de vacinação atualizada</li>
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <h4>Local e Horário:</h4>
+                            <p>Secretaria Municipal de Educação ou escolas municipais</p>
+                            <p>Segunda a sexta-feira, das 8h às 17h</p>
+                            <p>Contato: (11) 3333-8888</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="action-button">Pré-matrícula online</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header" onclick="toggleService(this)">
+                    <div class="service-icon education">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="service-info">
+                        <span class="service-category">EDUCAÇÃO</span>
+                        <h3 class="service-name">Cursos Profissionalizantes</h3>
+                    </div>
+                    <div class="expand-icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <p class="service-description">Cursos profissionalizantes gratuitos em diversas áreas para qualificação profissional e inserção no mercado de trabalho.</p>
+                    
+                    <div class="service-details">
+                        <div class="documents">
+                            <h4>Documentos Necessários:</h4>
+                            <ul>
+                                <li>RG e CPF</li>
+                                <li>Comprovante de residência</li>
+                                <li>Comprovante de escolaridade</li>
+                                <li>Foto 3x4 recente</li>
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <h4>Local e Horário:</h4>
+                            <p>Centro de Formação Profissional Municipal</p>
+                            <p>Segunda a sexta-feira, das 8h às 20h</p>
+                            <p>Contato: (11) 3333-9999</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="action-button">Ver cursos disponíveis</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header" onclick="toggleService(this)">
+                    <div class="service-icon social">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </div>
+                    <div class="service-info">
+                        <span class="service-category">ASSISTÊNCIA SOCIAL</span>
+                        <h3 class="service-name">Auxílio Alimentação</h3>
+                    </div>
+                    <div class="expand-icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <p class="service-description">Programa de distribuição de cestas básicas para famílias em situação de vulnerabilidade social e insegurança alimentar.</p>
+                    
+                    <div class="service-details">
+                        <div class="documents">
+                            <h4>Documentos Necessários:</h4>
+                            <ul>
+                                <li>Documento de identidade de todos os membros da família</li>
+                                <li>CPF do responsável familiar</li>
+                                <li>Comprovante de residência</li>
+                                <li>Comprovante de renda (se houver)</li>
+                                <li>Número do NIS (se inscrito no CadÚnico)</li>
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <h4>Local e Horário:</h4>
+                            <p>Centro de Referência de Assistência Social (CRAS)</p>
+                            <p>Segunda a sexta-feira, das 8h às 17h</p>
+                            <p>Contato: (11) 3333-6666</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="action-button">Verificar elegibilidade</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header" onclick="toggleService(this)">
+                    <div class="service-icon social">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <div class="service-info">
+                        <span class="service-category">ASSISTÊNCIA SOCIAL</span>
+                        <h3 class="service-name">Auxílio Financeiro Emergencial</h3>
+                    </div>
+                    <div class="expand-icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <p class="service-description">Programa de auxílio financeiro temporário para famílias em situação de extrema vulnerabilidade ou afetadas por calamidades.</p>
+                    
+                    <div class="service-details">
+                        <div class="documents">
+                            <h4>Documentos Necessários:</h4>
+                            <ul>
+                                <li>Documento de identidade</li>
+                                <li>CPF</li>
+                                <li>Comprovante de residência</li>
+                                <li>Comprovante da situação de emergência (quando aplicável)</li>
+                                <li>Número do NIS (se inscrito no CadÚnico)</li>
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <h4>Local e Horário:</h4>
+                            <p>Centro de Referência de Assistência Social (CRAS)</p>
+                            <p>Segunda a sexta-feira, das 8h às 17h</p>
+                            <p>Contato: (11) 3333-7777</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="action-button">Solicitar avaliação</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header" onclick="toggleService(this)">
+                    <div class="service-icon work">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="service-info">
+                        <span class="service-category">TRABALHO</span>
+                        <h3 class="service-name">Intermediação de Emprego</h3>
+                    </div>
+                    <div class="expand-icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <p class="service-description">Serviço de intermediação entre candidatos e empresas, com cadastro de currículos e vagas de emprego disponíveis no município.</p>
+                    
+                    <div class="service-details">
+                        <div class="documents">
+                            <h4>Documentos Necessários:</h4>
+                            <ul>
+                                <li>RG e CPF</li>
+                                <li>Carteira de Trabalho (física ou digital)</li>
+                                <li>Comprovante de residência</li>
+                                <li>Comprovante de escolaridade</li>
+                                <li>Currículo atualizado</li>
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <h4>Local e Horário:</h4>
+                            <p>Centro de Apoio ao Trabalhador (CAT)</p>
+                            <p>Segunda a sexta-feira, das 8h às 17h</p>
+                            <p>Contato: (11) 3333-0000</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="action-button">Cadastrar currículo online</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header" onclick="toggleService(this)">
+                    <div class="service-icon work">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <div class="service-info">
+                        <span class="service-category">TRABALHO</span>
+                        <h3 class="service-name">Seguro-Desemprego</h3>
+                    </div>
+                    <div class="expand-icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <p class="service-description">Orientação e apoio para solicitação do benefício do seguro-desemprego para trabalhadores demitidos sem justa causa.</p>
+                    
+                    <div class="service-details">
+                        <div class="documents">
+                            <h4>Documentos Necessários:</h4>
+                            <ul>
+                                <li>RG e CPF</li>
+                                <li>Carteira de Trabalho (física ou digital)</li>
+                                <li>Termo de Rescisão do Contrato de Trabalho</li>
+                                <li>Requerimento do Seguro-Desemprego</li>
+                                <li>Comprovante do número PIS/PASEP</li>
+                                <li>Dois últimos contracheques</li>
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <h4>Local e Horário:</h4>
+                            <p>Centro de Apoio ao Trabalhador (CAT)</p>
+                            <p>Segunda a sexta-feira, das 8h às 17h</p>
+                            <p>Contato: (11) 3333-1111</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="action-button">Agendar atendimento</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header" onclick="toggleService(this)">
+                    <div class="service-icon housing">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="service-info">
+                        <span class="service-category">HABITAÇÃO</span>
+                        <h3 class="service-name">Programa Habitacional</h3>
+                    </div>
+                    <div class="expand-icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <p class="service-description">Programa de acesso à moradia para famílias de baixa renda, com subsídios e financiamentos facilitados.</p>
+                    
+                    <div class="service-details">
+                        <div class="documents">
+                            <h4>Documentos Necessários:</h4>
+                            <ul>
+                                <li>RG e CPF de todos os membros da família</li>
+                                <li>Certidão de casamento ou união estável (se for o caso)</li>
+                                <li>Comprovante de residência</li>
+                                <li>Comprovante de renda</li>
+                                <li>Declaração de imposto de renda ou isenção</li>
+                                <li>Número do NIS (se inscrito no CadÚnico)</li>
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <h4>Local e Horário:</h4>
+                            <p>Secretaria Municipal de Habitação</p>
+                            <p>Segunda a sexta-feira, das 8h às 17h</p>
+                            <p>Contato: (11) 3333-2222</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="action-button">Verificar programas disponíveis</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header" onclick="toggleService(this)">
+                    <div class="service-icon documentation">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <div class="service-info">
+                        <span class="service-category">DOCUMENTAÇÃO</span>
+                        <h3 class="service-name">Emissão de Documentos</h3>
+                    </div>
+                    <div class="expand-icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <p class="service-description">Serviço de emissão e regularização de documentos básicos como RG, CPF, título de eleitor e certidões.</p>
+                    
+                    <div class="service-details">
+                        <div class="documents">
+                            <h4>Documentos Necessários:</h4>
+                            <ul>
+                                <li>Certidão de nascimento ou casamento</li>
+                                <li>Comprovante de residência</li>
+                                <li>Foto 3x4 recente (para RG)</li>
+                                <li>Documento anterior (em caso de segunda via)</li>
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <h4>Local e Horário:</h4>
+                            <p>Poupatempo Municipal</p>
+                            <p>Segunda a sábado, das 8h às 17h</p>
+                            <p>Contato: (11) 3333-3333</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="action-button">Agendar atendimento</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+  <footer class="footer">
+      <div class="footer-content">
+          <div class="footer-logo">
+              <i class="fa-solid fa-building-columns"></i>
+              <h2>ServiçoSocial</h2>
+          </div>
+          <p>Facilitando o acesso a serviços públicos para todos os cidadãos.</p>
+          <div class="footer-divider"></div>
+          <div class="footer-copyright">
+              <p>© 2025 Serviço Social. Todos os direitos reservados.</p>
+          </div>
+      </div>
+  </footer>
+
+    <div class="view-all-button">
+        <a href="#" class="view-all">Ver todos os serviços</a>
+    </div>
+
+    <script>
+        function toggleService(element) {
+            const card = element.closest('.service-card');
+            const content = card.querySelector('.service-content');
+            const icon = card.querySelector('.expand-icon i');
+            
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        }
+
+        document.querySelector('.search-input').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const cards = document.querySelectorAll('.service-card');
+            
+            cards.forEach(card => {
+                const serviceName = card.querySelector('.service-name').textContent.toLowerCase();
+                const serviceCategory = card.querySelector('.service-category').textContent.toLowerCase();
+                
+                if (serviceName.includes(searchTerm) || serviceCategory.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
