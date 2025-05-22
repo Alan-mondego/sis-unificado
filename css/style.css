@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+}
+.topbar {
+  background-color: #1d4ed8;
+  padding: 15px 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.topbar__logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.topbar__logo i {
+  margin-right: 10px;
+  font-size: 1.4rem;
+}
+.header__h1 {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.header__h1 h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.header__h1 p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+.header__button {
+  background-color: white;
+  color: #1e3a8a;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header__button:hover {
+  background-color: #e0e7ff;
+}
+.section__area-servicos h2 {
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem;
+  justify-content: center;
+}
+.service-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+.service-card h3 {
+  margin-bottom: 8px;
+}
+.service-card p {
+  margin-bottom: 12px;
+}
+.service-card ul {
+  list-style: none;
+  margin-bottom: 16px;
+}
+.service-card ul li::before {
+  content: "• ";
+  color: #1e3a8a;
+}
+.service-card button {
+  background: #1e3a8a;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.service-card button:hover {
+  opacity: 0.9;
+}
+.section__descricao {
+  text-align: center;
+  background-color: #f5f7fa;
+  padding: 4rem 2rem;
+}
+.section__descricao h2 {
+  padding: 1rem 0;
+}
+.section__descricao p {
+  text-align: justify;
+  padding: 1.5rem;
+  font-size: 12px;
+}
+.campo__sobre {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  text-align: justify;
+  height: 25rem;
+}
+.informacoes__sobre {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 1rem;
+  text-align: center;
+}
+.beneficios__sobre {
+  flex: initial;
+  padding: 1rem;
+}
+.beneficios__sobre h4 {
+  margin: 0.25rem 0;
+  font-weight: bold;
+}
+.beneficios__sobre p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: center;
+}
+.red { border-top: 4px solid #e53935; }
+.blue { border-top: 4px solid #1e88e5; }
+.green { border-top: 4px solid #43a047; }
+.yellow { border-top: 4px solid #fdd835; }
+.purple { border-top: 4px solid #8e24aa; }
+.indigo { border-top: 4px solid #3949ab; }
+.rodape__projeto {
+  background-color: #1e3a8a;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+.rodape__projeto p {
+  padding: 1rem;
+}

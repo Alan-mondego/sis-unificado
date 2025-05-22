@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiçoSocial - Todos os Serviços</title>
+    <link rel="stylesheet" href="css/servicos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <i class="fa-solid fa-building-columns"></i>
+            <h1>SUI</h1>
+        </div>
+        <a href="#" class="back-link">Voltar para Início</a>
+    </header>
+
+    <div class="services-header">
+        <div class="services-icon">
+            <i class="fa-solid fa-list-ul"></i>
+        </div>
+        <div class="services-title">
+            <h2>Todos os Serviços</h2>
+            <p>Lista completa de serviços disponíveis</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="search-container">
+            <input type="text" placeholder="Buscar serviços..." class="search-input">
+            <i class="fa-solid fa-search search-icon"></i>
+        </div>
+
+    </main>
+
+    <div class="view-all-button">
+        <a href="servicos.html" class="view-all">Ver todos os serviços</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fa-solid fa-building-columns"></i>
+                <h2>ServiçoSocial</h2>
+            </div>
+            <p>Facilitando o acesso a serviços públicos para todos os cidadãos.</p>
+            <div class="footer-divider"></div>
+            <div class="footer-copyright">
+                <p>© 2025 Serviço Social. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/servicos.js"></script>
+    
+    <!-- Função para expandir os cards de serviço -->
+    <script>
+        function alternarServico(element) {
+            const card = element.closest('.service-card');
+            const content = card.querySelector('.service-content');
+            const icon = card.querySelector('.expand-icon i');
+            
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css" />
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <div class="topbar__logo">
+          <i class="fas fa-building"></i>
+          <span>SUI</span>
+        </div>
+      </div>
+      <div class="header__h1">
+        <h1>SISTEMA UNIFICADO DE INFORMAÇÕES</h1>
+        <p>Encontre facilmente informações sobre serviços sociais públicos em um só lugar.</p>
+        <button class="header__button" onclick="window.location.href='servicos.html'">Explorar Serviços</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section__area-servicos">
+        <h2>Área de Serviços</h2>
+        <div class="services-container">
+          <div class="service-card red">
+            <h3>Saúde</h3>
+            <p>Postos de saúde, hospitais públicos, vacinação e medicamentos gratuitos.</p>
+            <ul>
+              <li>Postos de Saúde</li>
+              <li>Vacinação</li>
+              <li>Medicamentos</li>
+            </ul>
+            <button onclick="abrirServicos('Saude')">Ver todos os serviços</button>
+          </div>
+          <div class="service-card blue">
+            <h3>Educação</h3>
+            <p>Matrículas, cursos gratuitos, bolsas de estudo e programas profissionais.</p>
+            <ul>
+              <li>Matrículas Escolares</li>
+              <li>Cursos Gratuitos</li>
+              <li>Programas de Bolsas</li>
+            </ul>
+            <button onclick="abrirServicos('Educacao')">Ver todos os serviços</button>
+          </div>
+          <div class="service-card green">
+            <h3>Assistência Social</h3>
+            <p>Auxílios emergenciais, CRAS, CREAS e benefícios sociais.</p>
+            <ul>
+              <li>Programas de Auxílio</li>
+              <li>CRAS & CREAS</li>
+              <li>Benefícios</li>
+            </ul>
+            <button onclick="abrirServicos('Assistencia')">Ver todos os serviços</button>
+          </div>
+          <div class="service-card yellow">
+            <h3>Habitação</h3>
+            <p>Minha Casa Minha Vida, regularização de imóveis e financiamentos.</p>
+            <ul>
+              <li>Programa Minha Casa</li>
+              <li>Regularização</li>
+              <li>Financiamentos</li>
+            </ul>
+            <button onclick="abrirServicos('Habitacao')">Ver todos os serviços</button>
+          </div>
+          <div class="service-card purple">
+            <h3>Trabalho</h3>
+            <p>Vagas de emprego, seguro-desemprego e qualificação profissional.</p>
+            <ul>
+              <li>Vagas</li>
+              <li>Seguro-Desemprego</li>
+              <li>Qualificação</li>
+            </ul>
+            <button onclick="abrirServicos('Trabalho')">Ver todos os serviços</button>
+          </div>
+          <div class="service-card indigo">
+            <h3>Documentação</h3>
+            <p>RG, CPF, título de eleitor e certidões.</p>
+            <ul>
+              <li>RG & CPF</li>
+              <li>Certidões</li>
+              <li>Título de Eleitor</li>
+            </ul>
+            <button onclick="abrirServicos('Documentacao')">Ver todos os serviços</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__descricao">
+        <h2>Sobre o projeto</h2>
+        <div class="campo__sobre">
+          <p>
+            ServiçoSocial é uma iniciativa que visa centralizar informações sobre serviços sociais públicos, facilitando o acesso da população a recursos essenciais que muitas vezes estão dispersos em diferentes plataformas e órgãos.
+          </p>
+          <p>
+            Nosso objetivo é garantir que todos os cidadãos possam encontrar facilmente informações sobre seus direitos e os serviços disponíveis nas áreas de saúde, educação, assistência social, habitação, trabalho e muito mais.
+          </p>
+          <div class="informacoes__sobre">
+            <div class="beneficios__sobre">
+              <i class="fi fi-rr-shield-check"></i>
+              <h4>Informação Confiável</h4>
+              <p>Dados verificados e atualizados</p>
+            </div>
+            <div class="beneficios__sobre">
+              <i class="fi fi-bs-cloud"></i>
+              <h4>Acesso Universal</h4>
+              <p>Disponível para todos</p>
+            </div>
+            <div class="beneficios__sobre">
+              <i class="fi fi-sr-bolt"></i>
+              <h4>Atualização Constante</h4>
+              <p>Sempre com informações recentes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="rodape__projeto">
+        <i class="fas fa-building"></i>
+        <span>ServiçoSocial</span>
+        <p>Facilitando o acesso a serviços públicos para todos os cidadãos.</p>
+        <hr />
+        <p>Um projeto construído por todos, para todos.</p>
+      </div>
+    </footer>
+
+    <script>
+        function abrirServicos(area) {
+            
+            const mapeamentoAreas = {
+                'Saude': 'Saúde',
+                'Educacao': 'Educação',
+                'Assistencia': 'Assistência Social',
+                'Habitacao': 'Habitação',
+                'Trabalho': 'Trabalho',
+                'Documentacao': 'Documentação'
+            };
+            
+            const nomeAreaAPI = mapeamentoAreas[area] || area;
+            window.location.href = `servicos.html?area=${encodeURIComponent(nomeAreaAPI)}`;
+        }
+    </script>
+  </body>
+</html>
